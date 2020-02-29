@@ -1,0 +1,342 @@
+@charset "utf-8";/* CSS Document */
+
+/*统计*/
+.index_count{height:50px;background:url(../images/index_count_bg.gif) repeat-x;}
+.index_count ul li{float:left;height:50px;display:inline;font-size:14px;line-height:50px;}
+.index_count .year_number{width:169px;height:33px;margin-top:8px;background:url(../images/year_number.gif) no-repeat;text-align:right;padding-right:10px;line-height:33px;color:#ff5a00;font-size:20px;font-family:Arial;}
+.index_count .year_unit{margin-left:5px;}
+.index_count .le {margin-left:50px;}
+.index_count .year_sli{margin-left:50px;}
+.index_count .year_search{height:50px;margin-top:-1px;}
+.index_count .year_search .year_sea{width:124px;height:31px;padding-left:25px;background:url(../images/year_search.gif) no-repeat;border:none;color:#a6a6a6;line-height:31px\9;_line-height:29px;vertical-align:middle;}
+.index_count .year_search .year_btn{width:64px;height:31px;background-color:#e71f19;color:#fff;border:none;cursor:pointer;line-height:31px\9;_line-height:32px;vertical-align:middle;}
+
+/*首页双栏*/
+.index_left{float:left;width:740px;overflow:hidden;}
+.index_right{float:right;width:250px;overflow:hidden;}
+.section_title h2{height:37px;padding-left:31px;border-bottom:1px solid #e1dbdb;line-height:37px;font-weight:normal;}
+.section_title h2 a{font-size:16px;color:#e71f19;}/*红色字体*/
+.section_title h2 .more{float:right;display:block;height:30px;margin:3px 3px 0 0;padding-right:18px;background:url(../images/more.gif) no-repeat 26px 13px ;font-size:12px;font-family:'宋体';color:#262626;}
+
+/*栏目类01*/
+.tab01{height:100px;border-bottom:1px dashed #e6e6e6;margin-top:10px;}
+.tab01 .img,.tab01 .info{float:left;display:inline;}
+.tab01 .img img{width:120px;height:90px;}
+.tab01 .info{width:225px;overflow:hidden;margin-left:10px;}
+.tab01 .info .title{height:25px;line-height:25px;}
+.tab01 .info .title a{font-size:14px;color:#262626;}
+.tab01 .info .cont{height:56px;margin-top:7px;line-height:28px;font-family:'宋体';}
+.tab01 .info .cont a{color:#ff5a00;}/*橘黄色字体*/
+.tab_online{border-bottom:none;margin-top:15px;}
+.tab_online .info .title b{font-size:14px;font-weight: normal;color:#bababa;}
+.tab_online .img{padding:2px;border:1px solid #dcdcdc;}
+.tab_online .info .cont{height:69px;margin-top:2px;line-height:23px;font-family:'宋体';}
+.tab_people{height:101px;border-bottom:1px dashed #e6e6e6;}
+.tab_people .img img{width:120px;height:90px;}
+.tab_people .info .cont{height:92px;margin-top:0px;line-height:23px;font-family:'宋体';}
+.tab_people .info .cont .name{color:#ff5a00;}
+.link_more .more{ float:right;display:block;height:30px;margin:-35px 3px 0 0;padding-right:18px;line-height:30px;background:url(../images/more.gif) no-repeat 26px 10px ;font-size:12px;font-family:'宋体';color:#262626;}
+
+/*列表类型01*/
+.list01{margin-top:5px;}
+.list01 ul li{width:355px;height:28px;line-height:28px;overflow: hidden;}
+.list01 ul li a{font-family:'宋体';}
+.list01 ul li .more{float:right;margin-left:10px;font-family:'宋体';}
+.list01 ul li b{color:#999999;font-weight:normal;font-family:'宋体';}
+.list02 ul li{width:250px;}
+
+/*总会资讯*/
+.index_assinfor,.index_online,.index_localnews,.index_empiric{float:left;width:365px;}
+.index_assinfor h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px 8px;}
+
+/*媒体报道*/
+.index_mediareports,.index_downline,.index_localproject,.index_people{float:right;width:365px;}
+.index_mediareports h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -36px;}
+
+
+/*总会项目*/
+.index_project{ width:740px;height:187px;overflow:hidden;}
+.index_project h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 3px -79px;}
+.index_project h2 .project_quict{height:22px;margin-left:25px;padding-left:20px;border:1px solid #a8a8a8;line-height:22px\9;_line-height:23px;color:#aaa;background:url(../images/sou.jpg) no-repeat left center;}
+.index_project h2 .project_quict_chazhao{width: 64px;height: 24px;background-color: #e71f19;color: #fff;border: none;cursor: pointer;line-height: 24px\9;_line-height: 24px;vertical-align: middle;border:0px;}
+.index_project_cont{clear:both;height:150px;}
+.index_project_left,.index_project_list,.index_project_right{float:left;display:inline;margin-top:20px;}
+.index_project_list li{float:left;display:inline;margin:0 4px;}
+.index_project_list li img{width:124px;height:94px;padding:2px;border:1px solid #dcdcdc;}/*图片外框颜色*/
+.index_project_list li .name{display:block;width:124px;height:23px;font-size:13px;line-height:23px;text-align:center;}
+
+/*图片点击左右滚动效果*/
+.amazon_scroller{padding: 0px;}
+.amazon_scroller .amazon_scroller_nav{position: absolute}
+.amazon_scroller .amazon_scroller_nav li{cursor: pointer;position: absolute;}
+.amazon_scroller .amazon_scroller_mask{position: absolute;margin-left:30px;margin-right:30px;overflow: hidden;}
+.amazon_scroller_title{height:30px;font-size:14px;line-height:30px;overflow:hidden;}
+.amazon_scroller ul{padding: 0px;margin: 0px;float: left;}
+.amazon_scroller ul li{padding: 0px;margin: 0px;margin-left: 5px;margin-right: 5px;list-style: none;float: left;text-align: center;display:inline;}
+.amazon_scroller ul li a{text-decoration: none;}
+.amazon_scroller ul li a amazon_scroller_title{height:25px;overflow:hidden;}
+.amazon_scroller ul li a:hover{text-decoration: underline;}
+.amazon_scroller ul li a img{width:124px;height:94px;padding:1px;border:1px solid #dcdcdc;}
+
+/*在线捐赠信息*/
+.index_online h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -121px;}
+.index_online_cont{clear:both;}
+.index_online_cont li{clear:both;width:351px;height:30px;padding-left:14px;line-height:30px;background: url(../images/icon_news.jpg) no-repeat 5px 14px;overflow:hidden;*height:28px;*line-height:28px;}
+.index_online_cont li:hover{background: url(../images/icon_news.jpg) #f9f9f9 no-repeat 5px 14px;*height:28px;*line-height:28px;}
+.index_online_cont li h3,.index_online_cont li h4,.index_online_cont li h5,.index_online_cont li h6{float:left;font-size:12px;font-family:'宋体';font-weight:normal;}
+.index_online_cont h3{width:40px;}
+.index_online_cont h4{width:65px;text-align:center;}
+.index_online_cont h5{width:95px;text-align:right;color:#ff5a00;}
+.index_online_cont h6{width:125px;text-align:left;margin-left:25px;}
+
+/*线下捐赠信息*/
+.index_downline h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -173px;}
+
+/*地方慈善会资讯*/
+.index_localnews h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -216px;}
+.index_localnews_cont{clear:both;height:220px;}
+
+/*地方慈善会项目推荐*/
+.index_localproject h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -255px;}
+.index_localproject_cont{clear:both;height:220px;}
+
+/*栏目切换*/
+.titdiv ul{height:37px;background-color:#f9f9f9;border-bottom:1px solid #e1dbdb;}
+.titdiv ul li{float: left;display: block;width:90px;height:37px;font-size:16px;font-family:'微软雅黑';text-align:center;line-height:37px;cursor:pointer;}
+.titdiv ul .onli{width:88px;background-color:#fff;border-top:1px #F00 solid;border-left:1px solid #e1dbdb;border-right:1px solid #e1dbdb;border-bottom:none;}
+.titdiv ul .onli a{color:#e71f19;}
+.condiv{width: 365px;height: 200px;}
+.condiv div.subdiv{float: left;width: 365px;height: 200px;display: none;}  
+
+/*图片视频栏目切换*/
+.titdiv2 ul{height:37px;background-color:#f9f9f9;border-bottom:1px solid #e1dbdb;}
+.titdiv2 ul li{float: left;display: block;width:90px;height:37px;font-size:16px;font-family:'微软雅黑';text-align:center;line-height:37px;cursor:pointer;}
+.titdiv2 ul .onli2{width:88px;background-color:#fff;border-top: 1px #F00 solid;border-left:1px solid #e1dbdb;border-right:1px solid #e1dbdb;border-bottom:none;}
+.titdiv2 ul .onli2 a{color:#e71f19;}
+.condiv2{width:740px;height:120px;}
+.condiv2 div.subdiv2{float: left;width: 740px;height:120px;display: none;overflow:hidden;}
+.condiv2 div.subdiv2 ul li{float:left;display:inline;margin:15px 8px 0 7px;height:120px;}
+.pic{position:relative;overflow:hidden;}
+.pic img{width:133px;height:100px;}
+.img_text{display:inline-block;text-align:center;color:#fff;text-decoration:none;line-height:30px;background-color:#000;height:30px;text-align:center;width:133px;font-family:'宋体';z-index:1001;position:absolute;bottom:0;left:0;display:none;cursor: pointer;}
+.img_text:hover,.img_text:active{color:#fff;}
+.pic span{display:block;background:rgba(0,0,0,0.7);option:0.7;filter:alpha(opacity=70);-moz-opacity:0.7;z-index:1002;}
+
+/*通知公告*/
+.index_notice h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -434px;}
+.index_notice_cont{clear:both;margin-top:8px;height:139px;}
+.index_notice_cont ul li{width:220px;height:27px;padding-left:30px;background:url(../images/notice_icon.gif) no-repeat 10px 10px;line-height:27px;overflow: hidden;}
+.index_notice_cont ul li a{font-family:'宋体';}
+.index_notice_cont ul li .more{float:right;margin-left:10px;font-family:'宋体';}
+
+/*信息公开*/
+.index_information h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -475px;}
+.index_information_cont{clear:both;height:149px;overflow:hidden;}
+.index_information_cont_book{padding:16px 0;border-bottom:1px dashed #e6e6e6;}
+.index_information_left,.index_information_li,.index_information_right{float:left;}
+.index_information_left{width:16px;height:84px;}
+.index_information_li{margin:0 5px;width:205px;}
+.index_information_li li{float:left;display:inline;margin-left:13px;}
+.index_information_li li img{width:80px;height:80px;border:2px solid #dfdfdf;}
+.index_information_right{width:16px;height:84px;}
+.amazon_scroller2{padding: 0px;margin: 0 auto;}
+.amazon_scroller2 .amazon_scroller_nav{position: absolute}
+.amazon_scroller2 .amazon_scroller_nav li{cursor: pointer;position: absolute;}
+.amazon_scroller2 .amazon_scroller_mask{position: absolute;margin-left: 30px;margin-right: 30px;overflow: hidden;}
+.amazon_scroller2 ul{padding: 0px;margin: 0px;float: left;}
+.amazon_scroller2 ul li{padding: 0px;margin: 0px;margin-left: 5px;margin-right: 5px;list-style: none;float: left;text-align: center;display:inline;}
+.amazon_scroller2 ul li a{text-decoration: none;}
+.amazon_scroller2 ul li a amazon_scroller_title{height:25px;overflow:hidden;}
+.amazon_scroller2 ul li a:hover{text-decoration: underline;}
+.amazon_scroller2 ul li a img{width:80px;height:80px;border:2px solid #dcdcdc;}
+
+
+/*右侧广告1*/
+.index_right_ad01,.index_right_ad01 img{width:250px;height:218px;}
+
+/*右侧广告2*/
+.index_right_ad02,.index_right_ad02 img{width:250px;height:115px;}
+
+/*地图*/
+.index_map{width:248px;height:177px;border:1px solid #dcdcdc;}
+.index_map img{width:244px;height:146px;margin:2px;}
+.index_map_btn{height:27px;line-height:27px;font-family:'宋体';color:#fff;background-color:#656565;text-align:center;}
+.index_map_btn select{width:132px;text-align:center;vertical-align:middle;border:1px solid #7f9db9;margin-left:10px;margin-top:-2px;}
+
+/*我要捐赠*/
+.index_donate .title{background:url(../images/index_donate_titlebg.gif) no-repeat;height:38px;line-height:38px;text-align:center;color:#fff;font-size:16px;}
+.index_donate_cont{width:250px;height:282px;background:url(../images/index_donate_li_bg.gif) no-repeat;}
+.index_donate_li {height:68px;padding:25px 0 0 93px ;font-size:14px;}
+.index_donate_li span {color:#818181;}
+.index_donate_li a{color:#ff0000;text-decoration:none;}
+.index_donate_li a:hover{color:#818181;text-decoration:none;}
+
+/*右侧广告3*/
+.index_right_ad03,.index_right_ad03 img{width:250px;height:165px;}
+.condiv3{width:1000px;height:80px;overflow:hidden;}
+.condiv3 div.subdiv3{width:1000px;height:80px;}
+.condiv3 div.subdiv3 ul li{float:left;display:inline;margin:12px 8px 0 5px;}
+.condiv3 div.subdiv3 ul li img{height:55px;border:1px solid #ccc}
+
+/*banner团体救助左右切换效果*/
+.g_gallery_box{height:160px;width:900px;margin:0 auto;}
+.g_btn_left{float:left;height:99px;width:25px;background:url(../images/index_project_left.gif) no-repeat;cursor:pointer;}
+.g_btn_right{float:right;height:99px;width:25px;background:url(../images/index_project_right.gif) no-repeat;cursor:pointer;}
+.g_gallery_list{float:left;height:120px;width:850px;}
+.g_gallery{float:right;width:850px;overflow:hidden;height:120px;margin-top:20px;}
+.g_gallery_list ul{list-style:none;width:1000%}
+.g_gallery_list ul li{float:left;display:inline;margin:3px 8px 0 8px;}
+.g_gallery_list ul li img{width:120px;height:90px;border:1px solid #E1E1E1;padding:2px;}
+.g_gallery_list ul li .name{display:block;width:126px;height:23px;line-height:23px;font-family:'宋体';text-align:center;}
+
+/*banner信息公开左右切换效果*//
+.g_gallery_box2{height:160px;margin:0 auto;}
+.g_btn_left2{float:left;height:99px;width:25px;background:url(../images/index_project_left.gif) no-repeat;cursor:pointer;}
+.g_btn_right2{float:right;height:99px;width:25px;background:url(../images/index_project_right.gif) no-repeat;cursor:pointer;}
+.g_gallery_list2{float:left;height:120px;width:400px;}
+.g_gallery2{float:right;width:400px;overflow:hidden;height:120px;margin-top:20px;}
+.g_gallery_list2 ul{list-style:none;width:1000%}
+.g_gallery_list2 ul li{float:left;}
+.g_gallery_list2 ul li img{width:104px;height:114px;float:left;margin:0 13px;border:1px solid #E1E1E1;padding:2px;}
+
+/*banner慈善项目左右切换效果*//
+.csxm_guntu{ width:930px;}
+.g_gallery_box3{width:930px;margin:0 auto;}
+.g_btn_left3{float:left;height:99px;width:25px;background:url(../images/index_project_left.gif) no-repeat;cursor:pointer;}
+.g_btn_right3{float:right;height:99px;width:25px;background:url(../images/index_project_right.gif) no-repeat;cursor:pointer;}
+.g_gallery_list3{float:left;height:143px;width:880px;}
+.g_gallery3{float:right;width:880px;overflow:hidden;height:143px;margin-top:20px;}
+.g_gallery_list3 ul{list-style:none;width:1000%}
+.g_gallery_list3 ul li{float:left;display:inline;margin:3px 25px 0 0;}
+.g_gallery_list3 ul li img{width:150px;height:113px;border:1px solid #E1E1E1;padding:2px;}
+.g_gallery_list3 ul li .name{display:block;width:155px;height:21px;line-height:21px;font-family:'宋体';text-align:center;}
+
+/*中间图片广告*/
+.gg01{ margin-top:7px;}
+.gg01 .ad {width:738px;height:115px;overflow:hidden;position:relative;}
+.gg01 .slider,.gg01 .num{position:absolute;}
+.gg01 .slider li{ list-style:none;display:inline;}
+.gg01 .slider img{width:738px;height:115px;display:block;}
+.gg01 .num{right:5px;bottom:5px;}
+.gg01 .num li{float: left;color: #3a3a38;text-align: center;line-height: 16px;width: 16px;height: 16px;font-family: Arial;font-size:10px;cursor: pointer;overflow: hidden;margin: 3px 2px;background-color: #d2d1cf;}
+.gg01 .num li.on{color: #3b3b39;line-height: 16px;width: 16px;height: 16px;font-size:10px;margin: 3px 2px;background-color: #c7ab62;}
+
+
+/*友情链接*/
+.TTSlider{width:1000px;margin:10px auto}
+.TTSlider li{list-style-type:none;float: left;}
+.TTSliderTitle ul{height: 37px;background-color: #f9f9f9;border-bottom: 1px solid #e1dbdb;}
+.TTSliderTitle li{width:90px;height:37px;position: relative;z-index: 3;left: 0;}
+.TTSliderTitle li div{float: left;display: block;width: 90px;height: 37px;font-size: 16px;font-family: '微软雅黑';text-align: center;line-height: 37px;cursor: pointer;}
+.TTSliderTitle .cur div{width: 88px;background-color: #fff;border-top: 1px #F00 solid;border-left: 1px solid #e1dbdb;border-right: 1px solid #e1dbdb;border-bottom: none;}
+.TTSliderTitle .noneBorRight div{border-right: none;border-left:none;}
+.TTSliderTitle li a{display: block;overflow: hidden;}
+.TTSliderPic{width:1000px;position: relative;height: 80px;z-index: 1}
+.TTSliderPicList{position: relative;width:1000px;overflow: hidden;height:80px;}
+.TTSliderPic ul{position: absolute;display: none;top:3px;left: 0}
+.TTSliderPic ul.show{display: block;}
+.TTSliderPic li img{width:140px;height:55px;}
+.TTSliderPic li{width: 143px;height:80px;margin-top:15px;}
+.TTSliderPic li a{display: block;height:80px;overflow: hidden;}
+
+/*爱心捐赠*/
+.index_love h2{background:url(../images/icon.gif) #f9f9f9 no-repeat 5px -345px;}
+.index_love_cont{height:19px; line-height:19px;}
+.index_love_cont li{width:250px;height:27px;line-height:27px;overflow: hidden;font-family:'宋体';}
+.index_love_cont li span.name1{width:50px; display:inline-block; color:#e71f19; }
+.index_love_cont li span.time1{width:50px;display:inline-block; margin-left:5px; color:#e71f19;text-align:right;}
+.index_love_cont li span.money1{width:55px; display:inline-block; color:#e71f19; text-align:right;}
+.index_love_cont li span.fangxiang1{width:80px; display:inline-block; margin-left:10px; color:#e71f19;text-align:center;}
+#aa li{ clear:both; height:22px;}
+#aa li span{display:block; float:left;overflow: hidden; height:22px; line-height:22px;font-family:'宋体';}
+#aa li span.name2{width:50px;}
+#aa li span.time2{margin-left:5px;width:60px;text-align:center;}
+#aa li span.money2{width:55px;text-align:right;}
+#aa li span.fangxiang2{width:80px;margin-left:10px;text-align:center;}
+
+
+
+
+/*找回密码常用*/
+.forgotpassword{background:url(../images/forgotbg.gif) repeat-x; border:1px solid #eaeaea;}
+.forgot_title{ height:38px; font-size:14px; font-family:'微软雅黑'; color:#7b7b7b; padding-left:30px; background:url(../images/forgot_title_icon.gif) no-repeat 8px 13px; border-bottom:1px dashed #b9b9b9; line-height:38px;}
+.forgot_title a,.forgot_title a:visited{ color:#7b7b7b;}
+.forgot_step{ margin:30px 0 0 160px;}
+.forgot_step span{ display:block; float:left; height:32px; line-height:32px; font-family:'微软雅黑'; font-size:14px; text-align:center;}
+.forgot_step span.first{ width:237px; color:#7b7b7b; background:url(../images/step_first.gif) no-repeat;}
+.forgot_step span.first_th{width:237px; color:#7b7b7b; background:url(../images/step_first_th.gif) no-repeat;}
+.forgot_step span.first_on{ width:237px; color:#fff; background:url(../images/step_first_on.gif) no-repeat;}
+.forgot_step span.second{ width:229px;color:#7b7b7b;background:url(../images/step_second.gif) no-repeat;}
+.forgot_step span.second_on{ width:229px;color:#fff;background:url(../images/step_second_on.gif) no-repeat;}
+.forgot_step span.second_th{ width:229px;color:#7b7b7b;background:url(../images/step_second_th.gif) no-repeat;}
+.forgot_step span.third{width:210px;color:#7b7b7b;background:url(../images/step_second.gif) no-repeat;}
+.forgot_step span.third_on{width:210px;color:#fff;background:url(../images/step_second_on.gif) no-repeat;}
+
+/*如果您没有收到邮箱*/
+.forgotpassword_onmessage{ margin-top:80px;}
+.forgotpassword_onmessage h2{ background:url(../images/forgot_onmessage_title.gif) no-repeat 20px 0; height:37px;}
+.forgotpassword_onmessage_c{ background-color:#f6f6f6; height:100%;  padding:30px 0 20px 0;}
+.forgotpassword_onmessage_c ul li{ height:30px; overflow:hidden; padding-left:20px; line-height:30px; margin-left:20px;}
+.forgotpassword_onmessage_c ul li a.again,.forgotpassword_onmessage_c ul li a.again:visited{ color:#004fec;}
+
+
+/*选择找回密码方式*/
+.forgotpassword_check{ padding:10px;}
+.forgotpassword_check_c{ padding-top:40px;}
+.forgotpassword_check_c h2{ font-size:18px; font-family:'微软雅黑'; font-weight:normal; color:#7b7b7b; text-align:center;}
+.forgotpassword_check_c ul{ margin:20px 0 10px 420px;}
+.forgotpassword_check_c ul li{ line-height:35px; height:35px; font-size:14px; color:#7b7b7b;}
+.forgotpassword_check_c ul li input{ vertical-align:middle; margin-right:10px;}
+.forgotpassword_check_btn{ text-align:center; padding-top:10px; margin-bottom:15px;}
+.forgotpassword_check_btn .btn002{background:url(../images/index_btn.gif) 0 -35px no-repeat; width:80px; height:34px; border:0; color:#fff; cursor:pointer; text-align:center; line-height:34px;}
+
+/*用户名找回第一步*/
+.forgotpassword_first_c ul{ margin:40px 0 0 390px;}
+.forgotpassword_first_c ul li{ font-size:14px; color:#7b7b7b; line-height:26px; margin-top:15px;}
+.forgotpassword_first_c ul li input.name{ width:180px; height:26px; line-height:26px; padding-left:8px; margin:0 10px; color:#b4b4b4; border:1px solid #dfdfdf; background-color:#f8f8f8; vertical-align:middle;}
+.forgotpassword_first_c ul li span.forget a,.forgotpassword_first_c ul li span.forget a:visited{ font-size:12px; color:#db0202;}
+.forgotpassword_first_c ul li input.code{width:90px; height:26px; line-height:26px; padding-left:8px; margin:0 10px; color:#b4b4b4; border:1px solid #dfdfdf; background-color:#f8f8f8; vertical-align:middle;}
+.forgotpassword_first_c ul li.code{ font-size:12px; padding-left:67px; margin-top:5px;}
+.forgotpassword_first_c ul li.code span.change a,.forgotpassword_first_c ul li.code span.change a:visited{ color:#db0202;}
+
+/*用户名找回第二步*/
+.forgotpassword_second_c { height:100%; margin-top:80px;}
+.forgotpassword_second_c ul li{ float:left; display:inline; overflow:hidden; width:187px; height:240px; background:url(../images/forgot_second_libg.gif) no-repeat center bottom; margin:0 0 0 11px;}
+.forgotpassword_second_c dl{padding:0 10px;}
+.forgotpassword_second_c dl dd{text-align:center;}
+.forgotpassword_second_c dl dd.name{ font-family:'微软雅黑'; font-size:14px; color:#636363; line-height:30px; padding-bottom:5px; border-bottom:1px dashed #ccc; }
+.forgotpassword_second_c dl dd.cen{font-family:'微软雅黑'; font-size:12px;color:#787878; line-height:26px;padding-top:5px;text-align:left;}
+.forgotpassword_second_c dl dd.btn{color:#dd0101; line-height:24px; text-align:left; padding-top:5px;}
+.forgotpassword_second_c dl dd.btn a,.forgotpassword_second_c dl dd.btn a:visited{ color:#1d76c1; text-decoration:underline;}
+.forgotpassword_second_tit h2{ text-align:center; line-height:35px; height:35px; font-size:14px; font-weight:normal; color:#7b7b7b; margin-top:20px;}
+.forgotpassword_second_tit h2 span{ color:#f00;}
+.forgotpassword_second_tit h2 a,.forgotpassword_third_c h2 a:visited{color:#1177d6}
+.forgotpassword_second_c .btn002{ display: inline; background:url(../images/index_btn.gif) 0 -35px no-repeat;  width:80px; height:34px; border:0; color:#fff; cursor:pointer; float:left; text-align:center; line-height:34px; margin:5px 0 0 45px;}
+
+/*用户名找回第三步*/
+.forgotpassword_third_c{ position:relative; margin-top:20px; height:100%;}
+.forgotpassword_third_c h2{ text-align:center; line-height:35px; height:35px; font-size:14px; font-weight:normal; color:#7b7b7b;}
+.forgotpassword_third_c h2 span{ color:#f00;}
+.forgotpassword_third_c h2 a,.forgotpassword_third_c h2 a:visited{color:#1177d6}
+.forgotpassword_third_c h3{width:620px; height:36px; line-height:36px; background-color:#f3f3f3; margin:20px 0 0 200px; font-size:18px; font-family:'微软雅黑'; font-weight:normal; padding-left:10px;}
+.forgotpassword_third_c h3 span{ margin-left:10px; color:#f00; font-size:12px;font-family:'宋体';}
+.forgotpassword_third_c ul{ margin:10px 0 20px 230px;}
+.forgotpassword_third_c ul li{ color:#7b7b7b; font-size:14px; line-height:36px; height:36px; margin-top:5px; clear:both}
+.forgotpassword_third_c ul li.about{ font-size:12px;}
+.forgotpassword_third_c ul li.zhidao{ color:#db0202; font-size:14px;font-family:'微软雅黑'; padding-left:220px;}
+.forgotpassword_third_c ul li.v{ font-size:12px; line-height:18px;}
+.forgotpassword_third_c ul li.v span{ line-height:36px; margin-right:10px;}
+.forgotpassword_third_c ul li a,.forgotpassword_third_c ul li a:visited{color:#1177d6}
+.forgotpassword_third_c ul li span{display:block; float:left; width:150px; text-align:right;}
+.forgotpassword_third_c ul li span i{color:#f00; font-family:'宋体'; font-size:12px; line-height:36px; margin-right:3px;}
+.forgotpassword_third_c ul li input.txt{width:310px; height:26px; line-height:26px; padding-left:8px; margin:0 10px; color:#b4b4b4; border:1px solid #dfdfdf; background-color:#f8f8f8; vertical-align:middle;}
+.prompt{ position:absolute; width:120px; height:95px; background-color:#fef8aa; border:1px solid #f0e875; right:140px; top:142px; overflow:hidden;}
+.prompt div{margin:15px 10px; line-height:18px;}
+.prompt div span{ color:#cb0000;}
+
+/*密码成功页*/
+.success{ margin:100px 0 0 350px; padding-left:110px;  height:150px; background:url(../images/success_icon.gif) no-repeat;}
+.success span{ display:block;}
+.success span.v{ color:#3a3a3a; font-size:14px; font-weight:bold; line-height:30px;}
+.success span.b{ line-height:30px; color:#646464;}
+.success span .btn002{display: inline; background:url(../images/index_btn.gif) 0 -35px no-repeat;  width:80px; height:34px; border:0; color:#fff; cursor:pointer; float:left; text-align:center; line-height:34px; margin:5px 0 0 0;}

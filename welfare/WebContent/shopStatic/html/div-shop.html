@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>div-shop</title>
+	<link rel="stylesheet" href="../css/div-shop/div-shop.css" />
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="../assets/fonts/fontawesome/font-awesome.min.css"/>
+	<!-- Nav-->
+	<link rel="stylesheet" type="text/css" href="../assets/fonts/pe-icon/pe-icon.css">
+	<link rel="stylesheet" type="text/css" id="app-stylesheet" href="../css/nav.css">
+</head>
+<body>
+	<div class="main-container">
+			<header class="header header--fixed">
+				<div class="header__inner">
+					<div class="header__logo">
+						<a href="index.html"><img src="../imgs/logo.png" alt="" style="width: 122px;"/></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li class="current-menu-item">
+								<a href="all-main.html">主页</a>
+							</li>
+							<li><a href="div-shop.html">商城中心</a>
+							</li>
+							<li><a href="div-shop-cart.html">购物车</a>
+							</li>
+							<li><a href="div-shop-checkout.html">支付中心</a>
+							</li>
+							<li><a href="contact.html">个人中心</a>
+							</li>
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+	
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div><!-- Loader /- -->
+		
+		<main>
+			<!-- Services Section -->
+			<div class="services-section container-fluid">
+				<!-- Container -->
+				<div class="container">
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<i class="fa fa-truck"></i><h5>同校交易</h5><i class="fa fa-truck fa-flip-horizontal"></i>
+							<span class="icon_close"></span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<i class="fa fa-star-half-empty "></i><h5>安全保障</h5><i class="fa fa-star-half-empty fa-flip-horizontal"></i>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="srv-box">
+							<i class="fa fa-money"></i><h5>海量低价</h5><i class="fa fa-money"></i>
+						</div>
+					</div>
+				</div><!-- Container /- -->
+			</div><!-- Services Section /- -->
+			
+				
+			<!-- Product Section -->
+			<div id="product-section" class="product-section container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="row">
+						<!-- Section Header -->
+						<div class="section-header">
+							<h3>商品</h3>
+							<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+							
+						</div><!-- Section Header /- -->
+						<ul id="filters" class="products-categories no-left-padding">
+							<li><a data-filter="*" class="active" href="#">所有产品</a></li>
+							<li><a data-filter=".design" href="#">课程教材</a></li>
+							<li><a data-filter=".video" href="#">编程相关</a></li>
+							<li><a data-filter=".photography" href="#">课外阅读</a></li>
+							<li><a data-filter=".web" href="#">英文原版</a></li>
+							<li><a data-filter=".design" href="#">文化生活</a></li>
+							<li><a data-filter=".photography" href="#">经济管理</a></li>
+							<li><a data-filter=".video" href="#">其他<i class="fa fa-angle-down"></i></a></li>
+						</ul>
+						
+						<div class="input-group" style="margin: 0 auto 30px auto;">
+							<input class="form-control" placeholder="搜索您想要的商品" type="text" style="padding-left: 10px;">
+							<span class="input-group-btn">
+								<button class="btn btn-search" title="Search" type="button"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+						<!-- Products -->
+						<ul class="products" >
+							<!-- Product -->
+							<li class="product photography">
+								<a href="#" class="clear">
+									<img src="../imgs/book1.jpg" alt="Product" class="product-img"/>
+									<h5>四个春天</h5>
+									<span class="price"><del>$200</del>$139</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product video">
+								<a href="#" class="clear">
+									<img src="../imgs/book2.jpg" alt="Product" class="product-img"/>
+									<h5>算法导论</h5>
+									<span class="price"><del>$150</del>$85</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product photography">
+								<a href="#">
+									<img src="../imgs/book3.jpg" alt="Product" class="product-img"/>
+									<h5>小偷家族</h5>
+									<span class="price"><del>$100</del>$35</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product video">
+								<a href="#">
+									<img src="../imgs/book4.jpg" alt="Product" class="product-img"/>
+									<h5>Java编程思想</h5>
+									<span class="price"><del>$350</del>$279</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product design">
+								<a href="#">
+									<img src="../imgs/book5.jpg" alt="Product" class="product-img"/>
+									<h5>操作系统精髓与设计原理</h5>
+									<span class="price"><del>$450</del>$359</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product video">
+								<a href="#">
+									<img src="../imgs/book6.jpg" alt="Product" class="product-img"/>
+									<h5>计算机网络自顶向下</h5>
+									<span class="price"><del>$220</del>$129</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product photography">
+								<a href="#">
+									<img src="../imgs/book7.jpg" alt="Product" class="product-img"/>
+									<h5>人间失格</h5>
+									<span class="price"><del>$850</del>$550</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							
+							<!-- Product -->
+							<li class="product photography">
+								<a href="#">
+									<img src="../imgs/book8.jpg" alt="Product" class="product-img"/>
+									<h5>不能承受的生命之轻</h5>
+									<span class="price"><del>$50</del>$29</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							<li class="product web">
+								<a href="#">
+									<img src="../imgs/book10.jpg" alt="Product" class="product-img"/>
+									<h5>The adventures of Sherlock Holmes</h5>
+									<span class="price"><del>$50</del>$29</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							<li class="product web">
+								<a href="#">
+									<img src="../imgs/book11.jpg" alt="Product" class="product-img"/>
+									<h5>Grimm's Fairy</h5>
+									<span class="price"><del>$50</del>$29</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							<li class="product web">
+								<a href="#">
+									<img src="../imgs/book12.jpg" alt="Product" class="product-img"/>
+									<h5>The Lost World</h5>
+									<span class="price"><del>$50</del>$29</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+							<li class="product web">
+								<a href="#">
+									<img src="../imgs/book13.jpg" alt="Product" class="product-img"/>
+									<h5>Moon and  Sixpence</h5>
+									<span class="price"><del>$50</del>$29</span>
+								</a>
+								<div class="wishlist-box">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+									<a href="#"><i class="fa fa-search"></i></a>
+								</div>
+								<a href="#" class="addto-cart" title="Add To Cart">添加到购物车</a>
+							</li><!-- Product /- -->
+						</ul><!-- Products /- -->
+					</div><!-- Row /- -->
+					<nav class="ow-pagination">
+						<ul class="pager">
+							<li class="number"><a href="#">4</a></li>
+							<li class="load-more"><a href="#">加载更多</a></li>
+							<li class="previous"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							<li class="next"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+						</ul>
+					</nav>
+				</div><!-- Container /- -->
+			</div><!-- Product Section /- -->
+		</main>
+			<footer>
+                <div class="container">
+                    <div class="row">
+
+                        <!-- useful links -->
+                        <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+                            <h4>其他内容</h4>
+                            <ul class="row footer-links">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                	<div style="margin-left: 20px;">
+                                		<li><a href="#">实验</a></li>
+                                    	<li><a href="#">课件</a></li>
+                                    	<li><a href="#">课设</a></li>
+                                    	<li><a href="#">文档</a></li>
+                                    	<li><a href="#">复习题</a></li>
+                                	</div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                    <li><a href="#">竞赛A资料</a></li>
+                                    <li><a href="#">竞赛B资料</a></li>
+                                    <li><a href="#">竞赛C资料</a></li>
+                                    <li><a href="#">竞赛D资料</a></li>
+                                    <li><a href="#">竞赛E资料</a></li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <!-- recent news -->
+                        <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+                            <h4>最近更新</h4>
+
+                            <div class="row footer-news">
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <img src="../imgs/B.jpg" class="img-responsive center-block" alt="recent news 1" style="height: 50px;">
+                                </div>
+                                <div class="col-md-8 col-sm-4 col-xs-6">
+                                    <div class="row">
+                                        <p class="text-capitalize">
+                                            <a href="#">
+                                                19天
+                                            </a>
+                                        </p>
+                                        <p class="news-date">Dec 12,2018</p>
+                                    </div>
+                                </div>
+                            </div> <!-- /.footer-news -->
+
+                            <div class="row footer-news">
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                    <img src="../imgs/A.jpg" class="img-responsive center-block" alt="recent news 2" style="height: 50px;">
+                                </div>
+                                <div class="col-md-8 col-sm-4 col-xs-6">
+                                    <div class="row">
+                                        <p class="text-capitalize">
+                                            <a href="#">old先</a>
+                                        </p>
+                                        <p class="news-date">Jun 9,2019</p>
+                                    </div>
+                                </div>
+                            </div> <!-- /.footer-news -->
+                        </div> <!-- /.footer-widget -->
+
+                        <!-- news-letter -->
+                        <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+                            <h4>联系我们</h4>
+                            <p>注册获取最新消息噢</p>
+                            <div class="input-group margin-bottom-sm">
+                                <input class="form-control" type="text" placeholder="Phone Number">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-phone fa-fw"></i>
+                                </span>
+                            </div>
+                            <p style="margin-bottom: 0px; margin-top: 10px;">Don not feel offensive.</p>
+                            <p>We respect your privacy.</p>
+                        </div> <!-- /.footer-widget -->
+
+                        <!-- about avada agency -->
+                        <div class="col-md-3 col-sm-6 col-xs-6 footer-widget">
+                            <h4>其他平台</h4>
+
+                            <p>
+                            	I think for the most part if you're really honest with yourself about what you want in your life, life gives it to you.
+                            </p>
+
+                            <div class="footer-address">
+                                <p>
+                                    1-158-7157-7180-HELLO  <br>
+                                    798230246@mail.com
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="footer-share-button">
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul> <!-- /.footer-share-button -->
+                                </div>
+                            </div>
+                        </div> <!-- /.footer-widget -->
+
+                    </div>
+                </div>
+            </footer>
+			<!-- footer-navigation start -->  
+            <nav class="hidden-xs hidden-sm navbar footer-nav" role="navigation">
+                <div class="container">
+                    
+                    <div class="navbar-header">
+                        
+                        <!-- navbar logo -->
+                        <div class="navbar-brand">
+                            <span class="sr-only">&copy;THEMEWAGON</span>
+                            <a href="index.html">首页</a>
+                        </div>
+                        <!-- navbar logo -->
+
+                    </div><!-- /.navbar-header -->
+
+                    <!-- nav links -->
+                    <div class="collapse navbar-collapse" id="main-nav-collapse">
+                        <ul class="nav navbar-nav navbar-right text-capitalize">
+                            <li><a href="#about">
+                                <span>home</span>
+                            </a></li>
+
+                            <li><a href="#services">
+                                <span>pages</span>
+                            </a></li>
+
+                            <li><a href="#portfolio">
+                                <span>features</span>
+                            </a></li>
+
+                            <li><a href="#team">
+                                <span>portfolio</span>
+                            </a></li>
+
+                            <li><a href="#pricing">
+                                <span>blog</span>
+                            </a></li>
+
+                            <li><a href="#blog">
+                                <span>shop</span>
+                            </a></li>
+
+                            <li><a href="#contact">
+                                <span>contact</span>
+                            </a></li>
+                        </ul>
+                    </div><!-- nav links -->
+                    
+                </div><!-- /.container -->
+            </nav>
+            <!-- footer-navigation end -->
+			
+		</div>
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="../jquery/all-main/jquery-2.1.3.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="../js/div-shop/lib.js"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="../js/div-shop/div-shop.js"></script>
+	<!-- Nav-->
+	<script type="text/javascript" src="../jquery/nav/jquery.matchHeight.min.js"></script>
+	<script type="text/javascript" src="../js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+
+   ____          _            ____
+  / ___|___   __| | ___ _ __ / ___|_ __ ___  _   _ _ __
+ | |   / _ \ / _` |/ _ \ '__| |  _| '__/ _ \| | | | '_ \
+ | |__| (_) | (_| |  __/ |  | |_| | | | (_) | |_| | |_) |
+  \____\___/ \__,_|\___|_|   \____|_|  \___/ \__,_| .__/
+                                                  |_|
+
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="max-age=72000"/>
+    <meta name="_csrf" content="22b2cda0-3936-4d21-b499-210a881a9382"/>
+    <meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+    <meta name="_username" content="fantasy"/>
+    <title>评论管理 - CoderGroup</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="description" content="CoderGroup是一个面向开发者的技术分享交流社区，为广大开发者提供技术博客，问答，讨论的平台，放眼未来，成就梦想，简单而方便。CoderGroup，程序人生，义无反顾。"/>
+    <meta name="keywords" content="CoderGroup,Coder,大学生,开发者社区,开发者团队,计算机专业,程序员,开发者,面试宝典,Java编程,Java开发,Java学习路线,Java资源,SpringBoot,Spring"/>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon"/>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.codergroup.cn/components/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="http://cdn.codergroup.cn/components/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="http://cdn.codergroup.cn/components/adminlte/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="http://cdn.codergroup.cn/components/adminlte/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="http://cdn.codergroup.cn/components/layer/theme/default/layer.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+    div.article-list-item {
+        border: none;
+        padding-top: 8px;
+    }
+
+    div.article-list-item p.no-content {
+        padding-top: 169px;
+        font-size: 14px;
+        color: #999999;
+    }
+
+    div.article-list-item ul {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 16px;
+        list-style-type: none;
+    }
+
+    div.article-list-item ul.comment-list {
+        padding: 0;
+    }
+
+    div.article-list-item ul.comment-list.my-comment li {
+        padding-left: 0;
+    }
+
+    div.article-list-item ul.comment-list li {
+        padding: 7px 0 12px;
+        padding-left: 40px;
+        font-size: 14px;
+        color: #4F4F4F;
+        line-height: 22px;
+        border-bottom: 1px dashed #DDDDDD;
+    }
+
+    div.article-list-item ul.comment-list li:hover div.content-box div.title div.opt-box {
+        display: block;
+    }
+
+    div.article-list-item ul.comment-list li div.img-avatar-box {
+        margin-left: -40px;
+        float: left;
+    }
+
+    div.article-list-item ul.comment-list li div.img-avatar-box img {
+        border-radius: 50%;
+        border: 1px solid #E9E9E9;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a {
+        font-size: 14px;
+        line-height: 32px;
+        cursor: pointer;
+        transition: color 0.5s ease-out;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a.c-blue {
+        color: #349EDF;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a.c-blue:hover {
+        color: #1780BF;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a.c-red {
+        color: #CA0C16;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a.c-red:hover {
+        color: #B50C13;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box a.icon-split {
+        padding-right: 8px;
+        margin-right: 8px;
+        border-right: 1px solid #E9E9E9;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title {
+        margin-bottom: 8px;
+        min-height: 22px;
+        color: #999;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title span {
+        margin-right: 8px;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title span.user-name {
+        color: #4F4F4F;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title span.author-name {
+        color: #4F4F4F;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title a.article-title {
+        margin-right: 8px;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.title div.opt-box {
+        float: right;
+        display: none;
+        height: 22px;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.comment-box {
+        position: relative;
+        margin-top: 8px;
+        padding: 0;
+        line-height: 22px;
+        word-wrap: break-word;
+    }
+
+    div.article-list-item ul.comment-list li div.content-box div.comment-box svg.icon-yinhao {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        fill: #d4d4d4;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box {
+        margin-top: 8px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box.d-n {
+        display: none;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div {
+        margin-right: 8px;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.img-box img {
+        border-radius: 50%;
+        border: 1px solid #E9E9E9;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.ipt-box {
+        width: 100%;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.ipt-box input.txt-block {
+        display: block;
+        width: 100%;
+        height: 32px;
+        padding: 0 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background-color: #fafafa;
+        transition: border 0.5s ease-out;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.ipt-box input.txt-block:focus {
+        border: 1px solid #4F4F4F;
+        color: #4F4F4F;
+        outline: none;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.opt-box button.btn-reply {
+        padding: 8px 16px;
+        font-size: 14px;
+        line-height: 1;
+        background-color: transparent !important;
+        border: 1px solid #CA0C16;
+        border-radius: 4px;
+        color: #CA0C16;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.opt-box button.btn-reply:hover {
+        background-color: #CA0C16;
+        color: #fff;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.opt-box button.btn-reply[disabled] {
+        border-color: #d6d6d6;
+        cursor: not-allowed;
+        color: #d6d6d6;
+    }
+
+    div.article-list-item ul.comment-list li div.reply-box div.opt-box button.btn-reply[disabled]:hover {
+        background-color: #fff !important;
+        color: #d6d6d6;
+    }
+
+    #tab-content {
+        padding: 15px;
+    }
+
+</style>
+</head>
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+    <header class="main-header">
+    <nav class="navbar navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <img src="http://cdn.codergroup.cn/FjbXnMr4E2G1jt4JvsIGhwPXIkmi" alt="" height="25">
+                </a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/" class="active">首页</a></li>
+                    <li><a href="/articles" class="active">文章 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="/questions">问答</a></li>
+                    <li><a href="/main">我的主页</a></li>
+                </ul>
+
+                <form class="navbar-form navbar-left" action="/search/articles" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control global-search-input" name="keywords"
+                               id="main-search-input"
+                               placeholder="Search...">
+                    </div>
+                </form>
+                <ul class="nav navbar-nav">
+                    <li><a href="/post-new">写文章 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="/ask">提问</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-custom-menu" id="user-nav-wrapper">
+                <ul class="nav navbar-nav" id="user-nav">
+                    <!-- 私信-->
+                    <li class="dropdown messages-menu">
+                        <!-- Menu toggle button -->
+                        <a href="#" id="message-size-btn" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label label-success"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                            <li class="header">
+                                您没有未读私信
+                            </li>
+                            <li id="not-read-message-list">
+                                加载中...
+                            </li>
+                            <li class="footer"><a href="/manage/messages" target="_blank">查看所有私信</a></li>
+                        </ul>
+                    </li>
+                    <!-- 通知-->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" id="notice-size-btn" class="dropdown-toggle" data-toggle="dropdown"
+                           aria-expanded="true">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                            <li class="header">
+                                您没有未读通知
+                            </li>
+                            <li id="not-read-notice-list">
+                                加载中...
+                            </li>
+                            <li class="footer"><a href="/manage/notices">查看所有通知</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- 用户 -->
+                    <li class="dropdown user user-menu" id="user-menu">
+                        <a href="/manage/account/avatar" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="http://www.gravatar.com/avatar/e7c7b6eb675ba780985c7e1cbadd2484?s=128&amp;d=identicon&amp;r=PG" class="user-image"
+                                 alt="fantasy">
+                            <span class="hidden-xs">fantasy</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img src="http://www.gravatar.com/avatar/e7c7b6eb675ba780985c7e1cbadd2484?s=128&amp;d=identicon&amp;r=PG"
+                                     class="user-image" alt=""  onclick="window.location.href='/manage/account/avatar'">
+                                <p>
+                                    <span>fantasy</span>
+                                    <small>fantasy@gmail.com</small>
+                                </p>
+                            </li>
+                            <li class="user-body">
+                                <div class="row">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="/manage/articles">文章</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="/manage/questions">问答</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="/fantasy">我的主页</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="/manage/account"
+                                       class="btn btn-default btn-flat">个人中心</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/logout" class="btn btn-default btn-flat">退出</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <div class="content-wrapper">
+
+        <div class="container">
+            <section class="content">
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box box-solid collapsed-box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">个人中心</h3>
+                                <div class="box-tools">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body no-padding" style="display: none;">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="/fantasy" target="_blank">我的主页</a></li>
+                                    <li><a href="/manage/account">我的账号</a>
+                                    </li>
+                                    <li><a href="/manage/relationships">关系管理</a></li>
+                                    <li><a href="/manage/notices">通知管理</a></li>
+                                    <li><a href="/manage/messages" target="_blank">私信管理</a></li>
+
+                                </ul>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">文章管理</h3>
+                            </div>
+                            <div class="box-body no-padding">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="/post-new">发表文章</a></li>
+                                    <li><a href="/manage/articles">文章管理</a></li>
+                                    <li><a href="/manage/categorys"><i></i>个人分类管理</a></li>
+                                    <li class="active"><a href="/manage/comments"><i></i>评论管理</a></li>
+                                    <li><a href="/manage/bookmarks">收藏夹</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="box box-solid collapsed-box">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">问答管理</h3>
+                                <div class="box-tools">
+                                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                            class="fa fa-plus"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="box-body no-padding" style="display: none;">
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li><a href="/manage/questions">我的问题</a></li>
+                                    <li><a href="/manage/answers">我的回答</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="box box-solid">
+                            <div class="box-header with-border">
+                                <h3 class="box-title">评论管理</h3>
+                            </div>
+
+                            <div class="box-body table-responsive" id="right-box-body">
+
+                                <div id="right-box-body-replace">
+
+                                    <div class="nav-tabs-custom" style="box-shadow: 0 0;">
+                                        <ul class="nav nav-tabs">
+                                            <li class="comment-tab active" data-comment-type="in">
+                                                <a href="javascript:void(0)" data-toggle="tab">我收到的评论(1)</a>
+                                            </li>
+                                            <li class="comment-tab" data-comment-type="out">
+                                                <a href="javascript:void(0)" data-toggle="tab">我发表的评论(1)</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="tab-content">
+                                            <div class="tab-pane active" id="tab-pane" data-comment-type="in">
+
+                                                <div class="article-list-item">
+                                                    <!--我收到的评论-->
+                                                    <ul class="comment-list">
+                                                        <li class="clearfix">
+                                                            <div class="img-avatar-box">
+                                                                <img src="http://www.gravatar.com/avatar/e7c7b6eb675ba780985c7e1cbadd2484?s=128&amp;d=identicon&amp;r=PG"
+                                                                     width="32" height="32">
+                                                            </div>
+                                                            <div class="content-box">
+                                                                <div class="title">
+                                                                    <span class="user-name">fantasy</span>
+                                                                    <span class="date">
+                                                                        <time title="2019-03-16 20:13:54">7分钟前</time></span>
+
+                                                                    <span>评论了你的文章</span>
+                                                                    
+
+
+                                                                    <a class="article-title c-blue" target="_blank"
+                                                                       href="/articles/10102#comment">123</a>
+                                                                    <div class="opt-box clearfix">
+                                                                        <a  href="/articles/10102#comment" target="_blank">前往回复</a>
+                                                                        <a class="text-maroon delete-comment" href="javascript:void(0)" data-comment-id="102">删除</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="comment-box">
+                                                                    <p>test</p>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div>
+                                                        <div class="bottom-page paging-box-big">
+                                                            <a href="javascript:void(0)" class="page-link prev disabled"
+                                                               pageIndex="0">上一页</a>
+                                                            <a href="javascript:void(0)" class="page-link current"
+                                                               pageIndex="1">1</a>
+
+                                                            <a href="javascript:void(0)" class="page-link next disabled"
+                                                               pageIndex="2">下一页</a>
+                                                            <div class="page-jump">共<span>1</span>页，跳至
+                                                                <input type="number" class="jump-page-size" max="1">页
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        <script>
+                                                            var pageIndex = 1
+                                                        </script>
+</div>
+                                                </div>
+
+
+                                                
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.content-wrapper -->
+</div>
+<footer class="main-footer">
+    <div class="container" style="text-align: center;">
+        <strong>Copyright &copy; 2018 <a href="http://codergroup.cn">CoderGroup</a></strong> <a href="http://www.miitbeian.gov.cn/" class="text-black" target="_blank">赣ICP备17002430号-2</a>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<div class="modal fade in" id="loginModal">
+    <div class="modal-dialog modal-sm" style="width:350px;">
+        <div class="modal-content" style="border:none;">
+            <div class="modal-header">
+                <button type="button" id="login_close" class="close" data-dismiss="modal"><span
+                        aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="loginModalLabel" style="font-size: 18px;">快速登录</h4>
+            </div>
+            <div class="modal-body" id="login-modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="http://cdn.codergroup.cn/components/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.codergroup.cn/components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.codergroup.cn/components/layer/layer.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="http://cdn.codergroup.cn/components/adminlte/js/adminlte.min.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?73151ce4e3789ae86d394e4b23743b8b";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script type="text/javascript" src="/js/userspace/comment.js"></script>
+</body>
+</html>

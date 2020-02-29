@@ -1,0 +1,448 @@
+/* nav
+--------------------------------------------------------------------------------*/
+.header.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+
+.header.is-scroll {
+    top: 0;
+    box-shadow: 0 2px 92px 0 rgba(0, 0, 0, .18);
+}
+
+.header__inner {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.navbar-toggle {
+    position: relative;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    display: block;
+}
+
+.navbar-toggle .navbar-icon {
+    position: absolute;
+    top: 18px;
+    left: 25px;
+}
+
+.navbar-toggle.open .navbar-icon span {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transform: rotate(225deg);
+}
+
+.navbar-toggle.open .navbar-icon span:before {
+    top: 0;
+    transition: top .1s ease-out, opacity .1s ease-out .12s;
+    opacity: 0;
+}
+
+.navbar-toggle.open .navbar-icon span:after {
+    bottom: 0;
+    transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s;
+    transform: rotate(-90deg);
+}
+
+.navbar-icon span, .navbar-icon span:after, .navbar-icon span:before {
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+.open .navbar-icon span, .open .navbar-icon span:after,
+.open .navbar-icon span:before {
+    background-color: #fff;
+}
+
+.navbar-icon span {
+    transition-timing-function: cubic-bezier(.55, .055, .675, .19);
+    transition-duration: .22s;
+}
+
+.navbar-icon span:after, .navbar-icon span:before {
+    content: "";
+    display: block;
+}
+
+.navbar-icon span:before {
+    top: -8px;
+    transition: top .1s ease-in .25s, opacity .1s ease-in;
+}
+
+.navbar-icon span:after {
+    bottom: -8px;
+    transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19);
+}
+
+/* 8. fullscreenmenu
+--------------------------------------------------------------------------------*/
+
+.fullscreenmenu__module {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all .2s linear;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+    transition: all .2s linear;
+}
+
+.open li {
+    animation: fadeInUp .35s ease forwards;
+    animation-delay: .1s;
+}
+
+.open li:nth-of-type(2) {
+    animation-delay: .15s;
+}
+
+.open li:nth-of-type(3) {
+    animation-delay: .25s;
+}
+
+.open li:nth-of-type(4) {
+    animation-delay: .35s;
+}
+
+.open li:nth-of-type(5) {
+    animation-delay: .45s;
+}
+
+.open li:nth-of-type(6) {
+    animation-delay: .55s;
+}
+
+.open li:nth-of-type(7) {
+    animation-delay: .65s;
+}
+
+.open li:nth-of-type(8) {
+    animation-delay: .75s;
+}
+
+.open li:nth-of-type(9) {
+    animation-delay: .85s;
+}
+
+.open li:nth-of-type(10) {
+    animation-delay: .95s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.overlay-menu {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.overlay-menu ul {
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.overlay-menu ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay-menu ul li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+    transition: all .2s linear;
+}
+
+@media (min-width: 320px) {
+    .overlay-menu ul li a {
+        font-size: calc(2.27273vw + 22.72727px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .overlay-menu ul li a {
+        font-size: 50px;
+    }
+}
+
+.overlay-menu ul li.active > a, .overlay-menu ul li a:hover {
+    color: #ff594f;
+    text-decoration: line-through;
+    font-size: 55px;
+}
+
+.fs-button {
+    position: absolute;
+    z-index: 300;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transform: rotate(0deg);
+    transition: .2s ease-in-out;
+}
+
+.fs-button span {
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.fs-button span:nth-child(1) {
+    top: 0;
+}
+
+.fs-button span:nth-child(2) {
+    top: 6px;
+}
+
+.fs-button span:nth-child(3) {
+    top: 12px;
+}
+
+.fs-button.open span:nth-child(2) {
+    top: 6px;
+    left: 50%;
+    width: 0%;
+}
+
+.fs-button.open span:nth-child(1) {
+    top: 6px;
+    transform: rotate(45deg);
+}
+
+.fs-button.open span:nth-child(3) {
+    top: 6px;
+    transform: rotate(-45deg);
+}
+
+.overlay-menu {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.overlay-menu ul {
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.overlay-menu ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+}
+
+.overlay-menu ul li a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+    transition: all .2s linear;
+}
+/* =-=--=-=-=-=-=-==-=-=-=- 2.8  Footer   =-=-=-=-==-=-==-====-==-=- */
+
+footer {
+	background-color: #313131;
+	color: #fff;
+	font-size: 12px;
+	padding: 100px 0px;
+}
+
+footer h4 {
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+footer .footer-links {
+	padding: 0px;
+}
+
+footer .input-group {
+	margin-right: 40px;
+}
+
+footer .input-group .form-control {
+	font-size: 12px;
+	padding: 5px 10px;
+}
+
+footer .input-group span.input-group-addon {
+    border-radius: 0px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    border: 0px;
+}
+
+.footer-links li {
+	margin-bottom: 10px;
+}
+
+.footer-links li a {
+	color: #969595;
+}
+
+.footer-links li:hover a {
+	color: #ffffff;
+}
+
+.footer-links li a:before {
+	color: #fff;
+	font-family: 'FontAwesome';
+	content: "\f101";
+	margin-right: 10px;
+}
+
+.footer-news {
+	margin-bottom: 35px;
+}
+
+.footer-news p {
+	margin-bottom: 5px;
+	margin-top: -4px;
+	line-height: 1.45em;
+}
+
+.footer-news p a {
+	color: #ffffff;
+}
+
+.footer-news p.news-date {
+	color: #969595;
+	font-size: 10px;
+	margin-top: -2px;
+}
+
+.footer-address p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.footer-share-button {
+    padding: 0px;
+}
+
+.footer-share-button li {
+    display: inline-block;
+}
+
+.footer-share-button li a i {
+	background-color: #4a4a4a;
+	border-radius: 0px;
+	color: #6b6b6b;
+	font-size: 12px;
+	font-weight: 600;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	width: 30px;
+}
+
+.footer-share-button li a i:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.footer-nav {
+	background-color: #2d2d2d;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+.footer-nav li a {
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+.footer-nav li a:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.footer-nav .navbar-brand a {
+    font-size: 12px;
+    color: #6b6b6b;
+}
+
+@media (max-width: 991px) {
+	footer h4 {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.footer-widget {
+		width: 100%;
+	}
+}

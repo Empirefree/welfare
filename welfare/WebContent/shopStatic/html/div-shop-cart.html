@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>div-shop-cart</title>
+	
+	<link rel="stylesheet" href="../css/div-shop/div-shop-cart.css"/>
+	<link rel="stylesheet" href="../assets/fonts/fontawesome/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/div-shop/div-shop-cart1.css">
+	
+</head>
+<body>
+	<div class="main-container">
+
+		<!--在这里加入nav2-->
+			<!-- Cart -->
+			<div class="woocommerce-cart container-fluid no-left-padding no-right-padding">
+				<!-- Container -->
+				<div class="container">
+					<!-- Cart Table -->
+					<div class="col-md-12 col-sm-12 col-xs-12 cart-table">
+						<form>
+							<table class="table table-bordered table-responsive">
+								<thead>
+									<tr>
+										<th class="product-thumbnail">购买物品</th>
+										<th class="product-name">商品名称</th>
+										<th class="product-quantity">数量</th>
+										<th class="product-unit-price">单价</th>
+										<th class="product-subtotal">总价</th>
+										<th class="product-remove">Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="cart_item">
+										<td data-title="购买物品" class="product-thumbnail"><a href="#"><img src="../imgs/book3.jpg" alt="Product" /></a></td>
+										<td data-title="商品名称" class="product-name"><a href="#">小偷家族</a></td>
+										<td data-title="数量" class="product-quantity">
+											<div class="prd-quantity" data-title="Quantity">
+												<input value="-" class="qtyminus btn" data-field="quantity1" type="button" id="sub">
+												<input name="quantity1" value="0" class="qty" type="text" style="width: 43%;" id="showQ">
+												<input value="+" class="qtyplus btn" data-field="quantity1" type="button" id="plus">
+											</div>
+										</td>
+										<td data-title="单价" class="product-unit-price">$550</td>
+										<td data-title="总价" class="product-subtotal">$550</td>
+										<td data-title="移除" class="product-remove"><a href="#"><i class="fa fa-remove"></i></a></td>
+									</tr>
+									<tr>
+										<td class="action" colspan="6">
+											<a href="#" title="Continue shopping">继续选购</a>
+											<a href="#" title="update shopping cart">更新购物车</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div><!-- Cart Table /- -->
+					<div class="col-md-4 col-sm-6 col-xs-6 coupon">
+						<div class="coupon-box">
+							<h4>商品推荐</h4>
+							<div  class="selling-box">
+								<img src="../imgs/book1.jpg" alt="selling" style="width: 100px;"/>
+								<div class="selling-content">
+									<h6><a href="#">四个春天</a></h6>
+									<span class="price"><del>$75</del> $49</span>
+									<div class="star-rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+								<div class="icon-list">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+							<div  class="selling-box">
+								<img src="../imgs/book7.jpg" alt="selling" style="width: 100px;"/>
+								<div class="selling-content">
+									<h6><a href="#">人间失格</a></h6>
+									<span class="price"><del>$75</del> $49</span>
+									<div class="star-rating">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-o"></i>
+									</div>
+								</div>
+								<div class="icon-list">
+									<a href="#"><i class="fa fa-arrows-alt"></i></a>
+									<a href="#"><i class="fa fa-heart-o"></i></a>
+								</div>
+							</div>
+						</div>
+						
+					</div><!-- Coupon /- -->
+					<!-- Coupon -->
+					<div class="col-md-4 col-sm-6 col-xs-6 coupon">
+						<div class="coupon-box">
+							<h4>优惠码</h4>
+							<h6>如果您有优惠码，请在此处输入</h6>
+							<form>
+								<input type="text" class="form-control" placeholder="优惠码" />
+								<input type="submit" value="使用该优惠码" />
+							</form>
+						</div>
+					</div><!-- Coupon /- -->
+					<div class="col-md-4 col-sm-6 col-xs-6 cart-collaterals">
+						<div class="cart_totals">
+							<h3>购物车清单</h3>
+							<table>
+								<tr>
+									<th>总价</th>
+									<td>$550</td>
+								</tr>
+								<tr>
+									<th>交易方式</th>
+									<td>Free</td>
+								</tr>
+								<tr>
+									<th>最终价格</th>
+									<td>$550</td>
+								</tr>
+							</table>
+							<div class="wc-proceed-to-checkout">		
+								<a href="#" class="checkout-button button alt wc-forward">去结算</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- Container /- -->
+			</div><!-- Cart /- -->
+			
+		</main>
+	</div>
+	<script type="text/javascript" src="../jquery/all-main/jquery-2.1.3.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#sub').click(function(){
+				var x = $('#showQ').val();
+				x = parseInt(x);
+				if(x == 0)
+					;
+				else{
+					x = x-1;
+				}
+				$('#showQ').val(x);
+				
+			})
+			$('#plus').click(function(){
+				var x = $('#showQ').val();
+				x = parseInt(x);
+				x = x+1;
+				$('#showQ').val(x);
+				
+			})
+		});
+	</script>
+</body>
+</html>

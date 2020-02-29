@@ -1,0 +1,332 @@
+.line-limit-length{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+	min-height: 55px;
+	margin-bottom: 5px;
+}
+
+body {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;;
+	font-weight: 400;
+	line-height: 1.45;
+	color: #333;
+}
+*:hover {
+	-webkit-transition: all 0.4s ease-in-out;
+	   -moz-transition: all 0.4s ease-in-out;
+	    -ms-transition: all 0.4s ease-in-out;
+	     -o-transition: all 0.4s ease-in-out;
+			transition: all 0.4s ease-in-out;
+}
+
+html {
+	font-size: 0.813em;
+}
+.bg-white {
+	background-color: #ffffff;
+}
+.bg-light-gray {
+	background-color: #f9f9f9;
+}
+section {
+	padding: 1.7129em 0;
+}
+
+.headline {
+	margin-bottom: 50px;
+}
+/*--------------------------  feature  ----------------------------------*/
+
+.feature {
+	padding: 5.6285em 0 2.9145em;
+}
+
+.feature-content {
+    margin-bottom: 2.714em;
+}
+
+.feature-icon {
+	background-color: #000000;
+	border: 1px solid #000000;
+	border-radius: 50%;
+    color: #ffffff;
+    font-size: 45px;
+    height: 90px;
+    padding: 10px 0px 15px 3px;
+    width: 90px;
+}
+
+.feature-content:hover .feature-icon {
+	background-color: #ffffff;
+	border: 1px solid #313131;
+	color: #313131;
+}
+
+.feature-heading {
+	font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.feature-description {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+/*---------------------------  pricing  ----------------------------------*/
+
+.price-box {
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    padding: 20px 15px 25px 15px;
+    margin-bottom: 25px;
+}
+
+.price-box h3 {
+	border-bottom: 1px solid #dadada;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+}
+
+.price-box .price-info {
+    position: relative;
+    padding: 0px 15px;
+}
+
+.price-box .price-info .price {
+	border-bottom: 1px solid #dadada;
+	border-top: 1px solid #dadada;
+    color: #313131;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding: 18px 0px 10px 0px;
+}
+
+.price-box .price-info .price sup {
+	color: #313131;
+	font-size: 35px;
+    font-weight: 400;
+    top: -.62em;
+}
+
+.price-box .price-info .price span {
+    display: inline;
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+}
+
+.price-box .price-info span {
+	color: #969595;
+    display: block;
+    margin-bottom: 5px;
+}
+.price-box .price-info span:last-of-type{
+	margin-bottom: 15px;
+}
+.price-box:hover {
+    background-color: #313131;
+}
+
+.price-box:hover h3,
+.price-box:hover .price,
+.price-box:hover .price sup,
+.price-box:hover .price span {
+    color: #fff;
+}
+
+.price-box:hover .pricing-btn {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #313131;
+}
+.pricing-btn {
+    background-color: #dadada;
+    border: 1px solid #dadada;
+    color: black;
+    margin-top: 25px;
+}
+/*---------------------------  testimonial ------------------------------*/
+.client-box{
+	height: 180px;
+	cursor: pointer;
+	
+	
+}
+#client-speech .client-box {
+	background-color: #fff;
+    box-shadow: 1px 3px 7px #eee;
+    margin-bottom: 2.714em;
+    padding: 30px;
+}
+
+#client-speech .client-box .about-client {
+    width: 35%;
+    float: left;
+    margin-top: 3%;
+}
+.about-client{
+
+}
+#client-speech .client-box .about-client p {
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#client-speech .client-box .main-speech {
+    padding-left: 40%;
+}
+
+#client-speech .client-box .main-speech p {
+	font-size: 13px;
+	margin-bottom: 0px;
+}
+
+#client-speech .client-box .main-speech>p:last-child{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+#client-speech .client-box .main-speech>p:nth-last-child(2){
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+@media (max-width: 991px) {
+	.intro .intro-description h2 {
+		margin-top: 1.414em;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 700px) {
+	.intro .intro-description {
+		padding-left: 60px;
+	}
+}
+
+@media (max-width: 600px) {
+	#client-speech .client-box .main-speech {
+		
+	}
+
+}
+/*====================================== 2.5 pagination  ====================================*/
+
+.pagination>.active>a, 
+.pagination>.active>a:focus, 
+.pagination>.active>a:hover, 
+.pagination>.active>span, 
+.pagination>.active>span:focus, 
+.pagination>.active>span:hover,
+.pagination>li>a:focus, 
+.pagination>li>a:hover, 
+.pagination>li>span:focus, 
+.pagination>li>span:hover {
+    color: #fff;    
+    background-color: #000;    
+    border-color: #000;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    margin-left: 5px;
+    border-radius: 0px;
+    color: #dadada;
+    border: 2px solid #dadada;
+}
+
+/*---------------------------  portfolio  ----------------------------------*/
+
+.portfolio-item {
+	margin-bottom: 3.1269em;
+}
+
+.portfolio-item .item-image {
+	position: relative;
+}
+
+.portfolio-item .item-image a,
+.portfolio-item .item-image a img {
+	display: block;
+	position: relative;
+}
+
+.portfolio-item .item-image a {
+	overflow: hidden;
+}
+
+.portfolio-item .item-image a div {
+	position: absolute;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-item .item-image a div span {
+	color: #ffffff;
+	display: block;
+	font-size: 50px;
+	position: absolute;
+	left: 45%;
+	top: 35%;
+}
+
+.portfolio-item .item-description {
+    padding: 15px 0px;
+}
+
+.portfolio-item .item-description span {
+    display: block;
+    
+}
+
+.portfolio-item .item-description span.item-name {
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: #474747;
+    font-weight: bold;
+
+}
+
+.portfolio-item .item-description span.like {
+    float: right;
+    margin-top: 12px;
+}
+
+.portfolio-item .item-description span.like i:hover{
+	margin-top: 10px;
+    color: red;
+    cursor: pointer;
+}
+.price-tag{
+	color: #F4A460;
+	font-size: 18px;
+	padding-right: 10px;
+}
+@media (max-width: 767px) {
+	.portfolio-item .item-description {
+	    padding: 12px 50px;
+	}
+}
+.item-image{
+	background-color: #f9f9f9;
+}
+.img-responsive{
+	height: 250px;
+}

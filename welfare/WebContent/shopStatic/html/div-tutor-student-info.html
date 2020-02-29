@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+ 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>div-tutor-student-info</title>
+		<link rel="stylesheet" href="../assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/div-tutor/div-tutor-info.css"/>
+		<link rel="stylesheet" href="../css/div-tutor/div-tutor-info-respon.css"/>
+
+	</head>
+	<body>
+		<div class="container">
+        <!-- ===========================
+        HEADER
+        ============================ -->
+        <div id="header" class="row">
+            <div class="col-sm-2">
+                <img class="propic" src="../imgs/hiii.jpg" alt="" >
+            </div>
+            <!-- photo end-->
+
+            <div class="col-sm-10">
+                <div class="cv-title">
+                    <div class="row">
+                        <div class="col-sm-5" style="margin-bottom: 10px;">
+                            <h1>徐某某</h1>
+                        </div>
+                        <div class="col-sm-7 text-right dl-share">
+                        	<button class="buttonFor" data-toggle="modal" data-target="#myModal2">
+                        		<span class="fa fa-exchange"></span>&nbsp;修改密码
+                        	</button>
+                        	<button class="buttonFor" data-toggle="modal" data-target="#myModal">
+                        		<span class="fa fa-exchange"></span>&nbsp;修改个人信息
+                        	</button>
+                           	<a href="div-tutor-student-toTeacher.html"><span class="fa fa-tag"></span>申请成为教员</a>
+                        </div>
+                    </div>
+                    
+                </div><!-- Title end-->
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">修改个人信息</h4>
+				      </div>
+				      <div class="modal-body">
+				        <div class="row">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		姓名
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" placeholder="">
+				        	</div>
+				        </div>
+
+				        <div class="row" style="margin-top: 5px;">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		QQ
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" />
+				        	</div>
+				        </div>
+				        <div class="row" style="margin-top: 5px;">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		联系方式
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" />
+				        	</div>
+				        </div>
+				        <div class="row" style="margin-top: 5px;">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		邮箱
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="email" />
+				        	</div>
+				        </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				        <button type="button" class="btn btn-primary">提交</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">修改密码</h4>
+				      </div>
+				      <div class="modal-body">
+				        <div class="row">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		原始密码：
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" placeholder="">
+				        	</div>
+				        </div>
+				        <div class="row" style="margin-top: 5px;">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		修改密码：
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" placeholder="">
+				        	</div>
+				        </div>
+						<div class="row" style="margin-top: 5px;">
+				        	<div class="col-md-4 text-right" style=" margin-top: 5px;">
+				        		确认密码：
+				        	</div>
+				        	<div class="col-md-8">
+				        		<input type="text" placeholder="">
+				        	</div>
+				        </div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				        <button type="button" class="btn btn-primary">提交</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+                <!-- ===========================
+                SOCIAL & CONTACT
+                ============================ -->
+                <div class="row">
+
+
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled">
+                            <li><span class="social fa fa-qq"></span>798230246
+                            </li>
+                            <li><span class="social fa fa-phone"></span>15871577180
+                            </li>
+                            
+                            <li><span class="social fa fa-envelope-o"></span>798230246@qq.com
+                            </li>
+                        </ul>
+                    </div><!-- social 2nd col end-->
+
+
+                </div><!-- header social end-->
+            </div><!-- header right end-->
+        </div><!-- header end-->
+
+        <hr class="firsthr">
+
+        <!-- ===========================
+        BODY LEFT PART
+        ============================ -->
+        <div class="row">
+        
+            <div id="job" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-briefcase"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>家教信息管理</h3>
+					    <div class="row">
+					    	<div class="col-md-12 title-top">
+					    		<span class="tiltle-sub">已发布家教：</span>
+					    	</div>
+					    	<div class="row">
+		                        <div class="col-md-3" style="margin-left: 10px;">
+		                           <p><a href="div-tutor-pubulish-detail.html">高中英语</a></p>
+		                        </div>
+		                        <div class="year col-md-3">
+		                            <p>2018.12.1</p>
+		                        </div>
+		                        <div class="year col-md-5">
+		                            <button class="buttonFor" type="button">取消申请</button>
+		                        </div>
+	                        </div>
+	                        <div class="row">
+		                    	<div class="col-md-3" style="margin-left: 10px;">
+		                            <p><a href="div-tutor-pubulish-detail.html">小学语文</a></p>
+		                       </div>
+		                        <div class="year col-md-3">
+		                            <p>2018.11.1</p>
+		                        </div>
+		                        <div class="year col-md-5">
+		                            <button class="buttonFor" type="button">取消申请</button>
+		                        </div>
+	                        </div>
+	                        <div class="row">
+		                        <div class="col-md-3" style="margin-left: 10px;">
+		                            <p><a href="div-tutor-pubulish-detail.html">初中英语</a></p>
+		                        </div>
+		
+		                        <div class="year col-md-3">
+		                            <p>2017.11.1</p>
+		                        </div>
+		                        <div class="year col-md-5">
+		                            <button class="buttonFor" type="button">取消申请</button>
+		                        </div>
+	                        </div>
+	                        <div class="col-md-12 title-top">
+					    		<span class="tiltle-sub">已完成家教：</span>
+					    	</div>
+					    	<div class="row">
+					    		<div class="col-md-3" style="margin-left: 10px;">
+	                           	<p><a href="div-tutor-pubulish-detail.html">高中英语</a></p>
+	                       	 	</div>
+	                        	<div class="year col-md-3">
+	                            	<p>2018.12.1</p>
+	                        	</div>
+		                        <div class="year col-md-5">
+		                            <button class="buttonFor" type="button">投诉</button>
+		                        </div>
+	                         </div>
+	                        <div class="row">
+		                        <div class="col-md-3" style="margin-left: 10px;">
+		                           <p><a href="div-tutor-pubulish-detail.html">高中英语</a></p>
+		                        </div>
+		                        <div class="year col-md-3">
+		                            <p>2018.12.1</p>
+		                        </div>
+	                        
+	                        <div class="year col-md-5">
+	                            <button class="buttonFor" type="button">投诉</button>
+	                        </div>
+	                        </div>
+                		</div><!--Job experiences end-->
+            	</div><!--Job experiences end-->
+            </div>
+            <hr />
+        
+    
+        </div><!--right end-->
+    </div><!--container end-->
+
+		
+	<!--necessary scripts and plugins-->
+    <script src="../jquery/all-main/jquery-2.1.3.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/div-tutor/jquery.nicescroll.min.js"></script>
+    <script src="../js/div-tutor/evenfly.js"></script>
+	<script src="../js/div-tutor/div-tutor-info.js"></script>
+	</body>
+</html>

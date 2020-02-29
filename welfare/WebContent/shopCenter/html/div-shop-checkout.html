@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>div-shop-checkout</title>
+	<link rel="stylesheet" href="../css/div-shop/div-shop-checkout.css"/>
+	<link rel="stylesheet" href="../assets/fonts/fontawesome/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/div-shop/div-shop-checkout1.css">
+</head>
+<body>
+	<div class="main-container">
+	
+		<!--在这里加入nav2-->
+	
+		<main>
+			<!-- Page Banner -->
+			<div class="page-banner container-fluid no-padding">
+				<!-- Container -->
+				<div class="container">
+					<div class="banner-content">
+						<h3>结算</h3>
+						<p>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
+					</div>
+					<ol class="breadcrumb">
+						<li><a href="index.html" title="Home">主页</a></li>							
+						<li class="active">结算</li>
+					</ol>
+				</div><!-- Container /- -->
+			</div><!-- Page Banner /- -->	
+			<!-- Checkout -->
+			<div class="container-fluid no-left-padding no-right-padding woocommerce-checkout">
+				<!-- Container -->
+				<div class="container">
+					<!-- Login -->
+					<div class="col-md-12 col-sm-12 col-xs-12 login-block">
+						<div class="login-check">
+							<h3>登录账号</h3>
+							<div class="col-md-7 col-sm-6 col-xs-6 login-form">
+								<form>
+									<div class="form-group">
+										<input class="form-control" placeholder="用户名" type="text">
+									</div>
+									<div class="form-group">
+										<input class="form-control" placeholder="密码" type="text">
+									</div>
+									<input value="注册" type="submit">
+									<a href="#" title="忘记密码？">忘记密码？</a>
+								</form>
+							</div>
+							<div class="col-md-5 col-sm-6 col-xs-6 check-details">								
+								<div class="check-detail">
+									<h5>创建一个账号</h5>
+									<input name="payment" type="radio">
+									<label>注册并且结算</label>
+								</div>
+								<div class="check-detail">
+									<h5>顾客结算</h5>
+									<input name="payment" type="radio">
+									<label>直接结算</label>
+								</div>
+								<div class="check-detail">
+									<a href="#" title="continue" class="continue">继续</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- Login /- -->
+										<!-- Billing -->
+					<div class="checkout-form">
+						<form>
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h3>账单地址</h3>
+								
+								<div class="billing-field">
+									<div class="col-md-6 form-group">
+										<label>交易方式 *</label>
+										<div class="select">
+											<select class="form-control">
+												<option>邮寄</option>
+												<option>面对面交易</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 form-group">
+										<label>姓名*</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-12 form-group">
+										<label>地址类型(办公/家庭/其他)</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-12 form-group">
+										<label>地址1*</label>
+										<input class="form-control" placeholder="详细地址" type="text">
+									</div>
+									<div class="col-md-12 form-group">
+										<label>地址2(可选)</label>
+										<input class="form-control" placeholder="" type="text">
+									</div>
+									<div class="col-md-12 form-group">
+										<label>省份*</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-6 form-group">
+										<label>城市*</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-6 form-group">
+										<label>邮政编码</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-6 form-group">
+										<label>邮箱</label>
+										<input class="form-control" type="text">
+									</div>
+									<div class="col-md-6 form-group">
+										<label>手机号码</label>
+										<input class="form-control" type="text">
+									</div>
+								</div>
+								<div class="form-group col-md-12 col-sm-12 col-xs-12 woocommerce-info">
+									<input type="checkbox">
+									<label>创建账号</label>
+						        </div>
+							</div>
+							
+							<div class="col-md-6 col-sm-12 col-xs-12">
+								<h3>账单</h3>
+								<div class="shipping-fields">
+									<div class="checkout-order-table">
+										<table>
+											<thead>
+												<tr>
+													<th>商品</th>
+													<th>共计</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="cart_item">
+													<td class="product-name">小偷家族</td>
+													<td>$550.00</td>
+												</tr>
+												<tr class="cart-subtotal">
+													<th>总价</th>
+													<td>$550.00</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<th>运费</th>
+													<td>免费</td>
+												</tr>
+												<tr>
+													<th>共计</th>
+													<td>$550.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+									<div class="checkout-payment">
+										<ul>
+											<li>
+												<input value="Direct Bank Transfer" checked="" type="radio">
+												<label>银行转账</label>
+												<div class="payment_box">
+													<p>你的钱将会直接存入我们的银行帐户。请使用您的订单ID作为付款参考。订单将在我方账户资金结清后才能发货。</p>
+												</div>
+											</li>
+											<li>
+												<input value="Paypal" type="radio">
+												<label>其他支付方式 </label>
+											</li>
+										</ul>
+									</div>
+									<div class="place-order">
+										<input value="即刻下单" type="submit">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div><!-- Billing /- -->
+				</div><!-- Container /- -->
+			</div><!-- Checkout /- -->
+		</main>
+	</div>
+</body>
+</html>
