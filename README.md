@@ -3,4 +3,4 @@
 用户功能：登录注册，上传物品，捐赠领取物品，查看自己物品状态
 网站功能：展示物品，消息，提供用户基本功能和管理员功能
 后台功能：增删改查用户、物品及状态等
-![image](https://github.com/Empirefree/welfare/blob/master/JS%5B(23%7D%60~TB6%7D)%7DPX)VC2MN.png)
+![Alt text](https://github.com/Empirefree/welfare/blob/master/JS%5B(23%7D%60~TB6%7D)%7DPX)VC2MN.png)
