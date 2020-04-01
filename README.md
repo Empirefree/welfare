@@ -4,3 +4,6 @@
 网站功能：展示物品，消息，提供用户基本功能和管理员功能  
 后台功能：增删改查用户、物品及状态等  
 网站技术：spring,spring mvc, mybatis,bootstrap,layui等框架技术
+
+后台功能展示：
+![image](https://github.com/Empirefree/welfare/blob/master/image.png)
